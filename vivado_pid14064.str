@@ -1,0 +1,505 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 14064
+License: Customer
+
+Current time: 	Sun Dec 29 20:34:41 CST 2019
+Time zone: 	Taipei Standard Time (Asia/Taipei)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 150
+Available screens: 1
+Available disk space: 275 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=18
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	CHEN
+User home directory: C:/Users/CHEN
+User working directory: C:/Users/CHEN/Downloads/sample code
+User country: 	TW
+User language: 	zh
+User locale: 	zh_TW
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.1
+RDI_DATADIR: C:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/CHEN/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/CHEN/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/CHEN/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/CHEN/Downloads/sample code/vivado.log
+Vivado journal file location: 	C:/Users/CHEN/Downloads/sample code/vivado.jou
+Engine tmp dir: 	C:/Users/CHEN/Downloads/sample code/.Xil/Vivado-14064-LAPTOP-HOAAEJ93
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 593 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\CHEN\Downloads\sample code\lab10.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/CHEN/Downloads/sample code/lab10.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/CHEN/Downloads/sample code/lab10.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 116 MB (+119165kb) [00:00:12]
+// [Engine Memory]: 666 MB (+546994kb) [00:00:12]
+// [GUI Memory]: 122 MB (+553kb) [00:00:13]
+// [Engine Memory]: 708 MB (+9147kb) [00:00:14]
+// WARNING: HEventQueue.dispatchEvent() is taking  4024 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 710 MB. GUI used memory: 61 MB. Current time: 12/29/19, 8:34:45 PM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 739.992 ; gain = 113.098 
+// Project name: lab10; location: C:/Users/CHEN/Downloads/sample code; part: xc7a35ticsg324-1L
+dismissDialog("Open Project"); // by (cl)
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (lab10.v) elapsed time: 0.2s
+// Elapsed time: 214 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab10 (lab10.v)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab10 (lab10.v), vs0 : vga_sync (vga_sync.v)]", 2, false, false, false, false, false, true); // B (F, cl) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aH, cl)
+selectCodeEditor("lab10.v", 4, 161); // cl (w, cl)
+typeControlKey((HResource) null, "lab10.v", 'c'); // cl (w, cl)
+selectCodeEditor("lab10.v", 58, 358); // cl (w, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, cl)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// D (cl): Settings: addNotify
+// [Engine Memory]: 747 MB (+3584kb) [00:04:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  2098 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 762 MB. GUI used memory: 74 MB. Current time: 12/29/19, 8:38:43 PM CST
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor]", 7, true); // L (E, D) - Node
+expandTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor]", 7); // L (E, D)
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor, Fonts and Colors]", 11, false); // L (E, D)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (D)
+dismissDialog("Settings"); // D (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, cl)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// D (cl): Settings: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (D)
+dismissDialog("Settings"); // D (cl)
+selectCodeEditor("lab10.v", 92, 361); // cl (w, cl)
+typeControlKey((HResource) null, "lab10.v", 'v'); // cl (w, cl)
+selectCodeEditor("lab10.v", 57, 342); // cl (w, cl)
+selectCodeEditor("lab10.v", 81, 379); // cl (w, cl)
+// Elapsed time: 13 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // az
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab10 (lab10.v), ram0 : sram (sram_ball.v)]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab10 (lab10.v), ram0 : sram (sram_ball.v)]", 4, false, false, false, false, false, true); // B (F, cl) - Double Click
+// [GUI Memory]: 131 MB (+2448kb) [00:04:58]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab10.v", 1); // k (j, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("lab10.v", 108, 378); // cl (w, cl)
+selectCodeEditor("lab10.v", 74, 345); // cl (w, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab10 (lab10.v), ram0 : sram (sram_ball.v)]", 4, false); // B (F, cl)
+selectCodeEditor("lab10.v", 108, 377); // cl (w, cl)
+selectCodeEditor("lab10.v", 102, 256); // cl (w, cl)
+selectCodeEditor("lab10.v", 112, 381); // cl (w, cl)
+selectCodeEditor("lab10.v", 118, 407); // cl (w, cl)
+selectCodeEditor("lab10.v", 98, 297); // cl (w, cl)
+selectCodeEditor("lab10.v", 90, 250); // cl (w, cl)
+selectCodeEditor("lab10.v", 69, 255); // cl (w, cl)
+selectCodeEditor("lab10.v", 75, 224); // cl (w, cl)
+selectCodeEditor("lab10.v", 8, 349); // cl (w, cl)
+selectCodeEditor("lab10.v", 40, 432); // cl (w, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sram_ball (sram.v)]", 5, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sram_ball (sram.v)]", 5, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sram_ball.v", 2); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab10.v", 1); // k (j, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab10 (lab10.v), ram0 : sram (sram_ball.v)]", 4, false); // B (F, cl)
+// Elapsed time: 69 seconds
+selectCodeEditor("lab10.v", 743, 219); // cl (w, cl)
+selectCodeEditor("lab10.v", 737, 215); // cl (w, cl)
+selectCodeEditor("lab10.v", 745, 216); // cl (w, cl)
+selectCodeEditor("lab10.v", 735, 211); // cl (w, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+dismissDialog("Add Sources"); // c (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, cl)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// D (cl): Settings: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (D)
+dismissDialog("Settings"); // D (cl)
+// Elapsed time: 79 seconds
+selectCodeEditor("lab10.v", 327, 247); // cl (w, cl)
+selectCodeEditor("lab10.v", 426, 217); // cl (w, cl)
+selectCodeEditor("lab10.v", 556, 207); // cl (w, cl)
+selectCodeEditor("lab10.v", 626, 205); // cl (w, cl)
+selectCodeEditor("lab10.v", 699, 241); // cl (w, cl)
+selectCodeEditor("lab10.v", 852, 215); // cl (w, cl)
+selectCodeEditor("lab10.v", 237, 282); // cl (w, cl)
+selectCodeEditor("lab10.v", 490, 298); // cl (w, cl)
+selectCodeEditor("lab10.v", 663, 284); // cl (w, cl)
+selectCodeEditor("lab10.v", 580, 294); // cl (w, cl)
+selectCodeEditor("lab10.v", 445, 290); // cl (w, cl)
+selectCodeEditor("lab10.v", 852, 329); // cl (w, cl)
+selectCodeEditor("lab10.v", 860, 321); // cl (w, cl)
+selectCodeEditor("lab10.v", 873, 309); // cl (w, cl)
+selectCodeEditor("lab10.v", 588, 307); // cl (w, cl)
+selectCodeEditor("lab10.v", 511, 332); // cl (w, cl)
+selectCodeEditor("lab10.v", 499, 318); // cl (w, cl)
+// Elapsed time: 207 seconds
+selectCodeEditor("lab10.v", 212, 381); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("lab10.v", 382, 283); // cl (w, cl)
+selectCodeEditor("lab10.v", 368, 272); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("lab10.v", 1327, 187); // cl (w, cl)
+selectCodeEditor("lab10.v", 846, 265); // cl (w, cl)
+selectCodeEditor("lab10.v", 243, 402); // cl (w, cl)
+selectCodeEditor("lab10.v", 371, 406); // cl (w, cl)
+// [GUI Memory]: 138 MB (+1090kb) [00:14:19]
+// Elapsed time: 78 seconds
+selectCodeEditor("lab10.v", 242, 399); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("lab10.v", 293, 419); // cl (w, cl)
+selectCodeEditor("lab10.v", 760, 183); // cl (w, cl)
+selectCodeEditor("lab10.v", 332, 316); // cl (w, cl)
+typeControlKey((HResource) null, "lab10.v", 'c'); // cl (w, cl)
+selectCodeEditor("lab10.v", 378, 325); // cl (w, cl)
+typeControlKey((HResource) null, "lab10.v", 'v'); // cl (w, cl)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 178 seconds
+selectCodeEditor("lab10.v", 447, 336); // cl (w, cl)
+selectCodeEditor("lab10.v", 491, 345); // cl (w, cl)
+selectCodeEditor("lab10.v", 356, 366); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 28 seconds
+selectCodeEditor("lab10.v", 339, 277); // cl (w, cl)
+selectCodeEditor("lab10.v", 103, 231); // cl (w, cl)
+selectCodeEditor("lab10.v", 384, 197); // cl (w, cl)
+selectCodeEditor("lab10.v", 407, 56); // cl (w, cl)
+selectCodeEditor("lab10.v", 374, 178); // cl (w, cl)
+selectCodeEditor("lab10.v", 121, 190); // cl (w, cl)
+typeControlKey((HResource) null, "lab10.v", 'v'); // cl (w, cl)
+// Elapsed time: 43 seconds
+selectCodeEditor("lab10.v", 422, 270); // cl (w, cl)
+selectCodeEditor("lab10.v", 324, 228); // cl (w, cl)
+typeControlKey((HResource) null, "lab10.v", 'c'); // cl (w, cl)
+selectCodeEditor("lab10.v", 427, 270); // cl (w, cl)
+typeControlKey((HResource) null, "lab10.v", 'v'); // cl (w, cl)
+selectCodeEditor("lab10.v", 490, 274); // cl (w, cl)
+selectCodeEditor("lab10.v", 742, 275); // cl (w, cl)
+typeControlKey((HResource) null, "lab10.v", 'v'); // cl (w, cl)
+selectCodeEditor("lab10.v", 830, 272); // cl (w, cl)
+// Elapsed time: 19 seconds
+selectCodeEditor("lab10.v", 1355, 338); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("lab10.v", 943, 463); // cl (w, cl)
+selectCodeEditor("lab10.v", 954, 436); // cl (w, cl)
+typeControlKey((HResource) null, "lab10.v", 'v'); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("lab10.v", 163, 347); // cl (w, cl)
+selectCodeEditor("lab10.v", 678, 344); // cl (w, cl)
+selectCodeEditor("lab10.v", 941, 395); // cl (w, cl)
+// Elapsed time: 37 seconds
+selectCodeEditor("lab10.v", 1337, 321); // cl (w, cl)
+selectCodeEditor("lab10.v", 93, 284); // cl (w, cl)
+selectCodeEditor("lab10.v", 109, 234); // cl (w, cl)
+// Elapsed time: 23 seconds
+typeControlKey((HResource) null, "lab10.v", 'v'); // cl (w, cl)
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "lab10.v", 'v'); // cl (w, cl)
+selectCodeEditor("lab10.v", 100, 270); // cl (w, cl)
+// Elapsed time: 91 seconds
+selectCodeEditor("lab10.v", 261, 319); // cl (w, cl)
+selectCodeEditor("lab10.v", 382, 322); // cl (w, cl)
+selectCodeEditor("lab10.v", 524, 316); // cl (w, cl)
+selectCodeEditor("lab10.v", 544, 318); // cl (w, cl)
+selectCodeEditor("lab10.v", 524, 314); // cl (w, cl)
+selectCodeEditor("lab10.v", 651, 277); // cl (w, cl)
+selectCodeEditor("lab10.v", 504, 350); // cl (w, cl)
+// Elapsed time: 38 seconds
+selectCodeEditor("lab10.v", 1326, 348); // cl (w, cl)
+selectCodeEditor("lab10.v", 426, 282); // cl (w, cl)
+typeControlKey((HResource) null, "lab10.v", 'v'); // cl (w, cl)
+// Elapsed time: 17 seconds
+selectCodeEditor("lab10.v", 768, 188); // cl (w, cl)
+typeControlKey((HResource) null, "lab10.v", 'c'); // cl (w, cl)
+selectCodeEditor("lab10.v", 907, 447); // cl (w, cl)
+typeControlKey((HResource) null, "lab10.v", 'v'); // cl (w, cl)
+// Elapsed time: 27 seconds
+selectCodeEditor("lab10.v", 98, 200); // cl (w, cl)
+selectCodeEditor("lab10.v", 94, 185); // cl (w, cl)
+selectCodeEditor("lab10.v", 895, 195); // cl (w, cl)
+typeControlKey((HResource) null, "lab10.v", 'v'); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("lab10.v", 2, 358); // cl (w, cl)
+selectCodeEditor("lab10.v", 2, 276); // cl (w, cl)
+selectCodeEditor("lab10.v", 262, 238); // cl (w, cl)
+selectCodeEditor("lab10.v", 365, 226); // cl (w, cl)
+selectCodeEditor("lab10.v", 375, 227); // cl (w, cl)
+// Elapsed time: 43 seconds
+selectCodeEditor("lab10.v", 1326, 236); // cl (w, cl)
+selectCodeEditor("lab10.v", 384, 231); // cl (w, cl)
+selectCodeEditor("lab10.v", 654, 176); // cl (w, cl)
+selectCodeEditor("lab10.v", 379, 233); // cl (w, cl)
+// Elapsed time: 44 seconds
+selectCodeEditor("lab10.v", 748, 266); // cl (w, cl)
+selectCodeEditor("lab10.v", 882, 284); // cl (w, cl)
+selectCodeEditor("lab10.v", 305, 272); // cl (w, cl)
+selectCodeEditor("lab10.v", 115, 229); // cl (w, cl)
+selectCodeEditor("lab10.v", 453, 439); // cl (w, cl)
+// Elapsed time: 216 seconds
+selectCodeEditor("lab10.v", 205, 396); // cl (w, cl)
+typeControlKey((HResource) null, "lab10.v", 'v'); // cl (w, cl)
+selectCodeEditor("lab10.v", 6, 401); // cl (w, cl)
+selectCodeEditor("lab10.v", 98, 387); // cl (w, cl)
+selectCodeEditor("lab10.v", 67, 397); // cl (w, cl)
+selectCodeEditor("lab10.v", 552, 351); // cl (w, cl)
+selectCodeEditor("lab10.v", 122, 396); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 766 MB. GUI used memory: 79 MB. Current time: 12/29/19, 9:08:43 PM CST
+// Elapsed time: 217 seconds
+selectCodeEditor("lab10.v", 95, 272); // cl (w, cl)
+// Elapsed time: 27 seconds
+selectCodeEditor("lab10.v", 1307, 243); // cl (w, cl)
+selectCodeEditor("lab10.v", 567, 263); // cl (w, cl)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 38 seconds
+selectCodeEditor("lab10.v", 346, 308); // cl (w, cl)
+selectCodeEditor("lab10.v", 228, 147); // cl (w, cl)
+selectCodeEditor("lab10.v", 294, 308); // cl (w, cl)
+selectCodeEditor("lab10.v", 296, 308, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lab10.v", 'c'); // cl (w, cl)
+selectCodeEditor("lab10.v", 370, 449); // cl (w, cl)
+typeControlKey((HResource) null, "lab10.v", 'v'); // cl (w, cl)
+selectCodeEditor("lab10.v", 329, 449); // cl (w, cl)
+selectCodeEditor("lab10.v", 391, 90); // cl (w, cl)
+typeControlKey((HResource) null, "lab10.v", 'v'); // cl (w, cl)
+// Elapsed time: 149 seconds
+selectCodeEditor("lab10.v", 405, 159); // cl (w, cl)
+selectCodeEditor("lab10.v", 103, 148); // cl (w, cl)
+// Elapsed time: 16 seconds
+selectCodeEditor("lab10.v", 421, 163); // cl (w, cl)
+// Elapsed time: 21 seconds
+selectCodeEditor("lab10.v", 163, 190); // cl (w, cl)
+selectCodeEditor("lab10.v", 442, 472); // cl (w, cl)
+selectCodeEditor("lab10.v", 212, 206); // cl (w, cl)
+selectCodeEditor("lab10.v", 281, 190); // cl (w, cl)
+selectCodeEditor("lab10.v", 315, 191); // cl (w, cl)
+selectCodeEditor("lab10.v", 102, 149); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sram_ball.v", 2); // k (j, cl)
+selectCodeEditor("sram_ball.v", 138, 189); // cl (w, cl)
+selectCodeEditor("sram_ball.v", 244, 216); // cl (w, cl)
+selectCodeEditor("sram_ball.v", 143, 184); // cl (w, cl)
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab10.v", 1); // k (j, cl)
+selectCodeEditor("lab10.v", 155, 144); // cl (w, cl)
+selectCodeEditor("lab10.v", 439, 170); // cl (w, cl)
+selectCodeEditor("lab10.v", 449, 120); // cl (w, cl)
+selectCodeEditor("lab10.v", 462, 224); // cl (w, cl)
+selectCodeEditor("lab10.v", 465, 173); // cl (w, cl)
+selectCodeEditor("lab10.v", 467, 118); // cl (w, cl)
+selectCodeEditor("lab10.v", 466, 182); // cl (w, cl)
+selectCodeEditor("lab10.v", 466, 139); // cl (w, cl)
+selectCodeEditor("lab10.v", 456, 205); // cl (w, cl)
+selectCodeEditor("lab10.v", 470, 138); // cl (w, cl)
+selectCodeEditor("lab10.v", 471, 183); // cl (w, cl)
+selectCodeEditor("lab10.v", 108, 187); // cl (w, cl)
+selectCodeEditor("lab10.v", 408, 180); // cl (w, cl)
+selectCodeEditor("lab10.v", 93, 185); // cl (w, cl)
+selectCodeEditor("lab10.v", 106, 186); // cl (w, cl)
+// Elapsed time: 24 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("lab10.v", 581, 376); // cl (w, cl)
+selectCodeEditor("lab10.v", 179, 535); // cl (w, cl)
+selectCodeEditor("lab10.v", 59, 524); // cl (w, cl)
+selectCodeEditor("lab10.v", 673, 357); // cl (w, cl)
+selectCodeEditor("lab10.v", 795, 330); // cl (w, cl)
+// Elapsed time: 18 seconds
+selectCodeEditor("lab10.v", 248, 239); // cl (w, cl)
+selectCodeEditor("lab10.v", 238, 292); // cl (w, cl)
+// Elapsed time: 37 seconds
+selectCodeEditor("lab10.v", 62, 407); // cl (w, cl)
+typeControlKey((HResource) null, "lab10.v", 'c'); // cl (w, cl)
+selectCodeEditor("lab10.v", 230, 311); // cl (w, cl)
+typeControlKey((HResource) null, "lab10.v", 'v'); // cl (w, cl)
+selectCodeEditor("lab10.v", 322, 318); // cl (w, cl)
+selectCodeEditor("lab10.v", 421, 292); // cl (w, cl)
+selectCodeEditor("lab10.v", 423, 321); // cl (w, cl)
+selectCodeEditor("lab10.v", 431, 263); // cl (w, cl)
+selectCodeEditor("lab10.v", 471, 369); // cl (w, cl)
+selectCodeEditor("lab10.v", 457, 289); // cl (w, cl)
+selectCodeEditor("lab10.v", 468, 319); // cl (w, cl)
+selectCodeEditor("lab10.v", 452, 279); // cl (w, cl)
+selectCodeEditor("lab10.v", 469, 307); // cl (w, cl)
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k (aL, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cl): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (cl)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// by (cl):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Sun Dec 29 21:17:07 2019] Launched synth_1... Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Synthesis Completed: addNotify
+// Elapsed time: 59 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// by (cl):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Sun Dec 29 21:18:08 2019] Launched impl_1... Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 49 seconds
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aH, cl)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aH, cl)
+unMinimizeFrame(PAResourceOtoP.PAViews_DESIGN_RUNS, "Design Runs"); // az
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Implementation Completed: addNotify
+// Elapsed time: 113 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sun Dec 29 21:20:58 2019] Launched impl_1... Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 77 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// by (cl):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1355 ms.
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // by (cl)
+// Elapsed time: 22 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// by (cl):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.1   **** Build date : May 24 2019 at 15:13:31     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 818.910 ; gain = 13.848 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  4927 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319A438D0A 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,692 MB. GUI used memory: 87 MB. Current time: 12/29/19, 9:22:53 PM CST
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1929.465 ; gain = 1110.555 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 

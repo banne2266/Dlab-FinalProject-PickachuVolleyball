@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Jan  4 12:24:35 2020
+# Process ID: 19788
+# Current directory: C:/Users/Henry/Desktop/fp0103
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15156 C:\Users\Henry\Desktop\fp0103\lab10.xpr
+# Log file: C:/Users/Henry/Desktop/fp0103/vivado.log
+# Journal file: C:/Users/Henry/Desktop/fp0103\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Henry/Desktop/fp0103/lab10.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_design
+open_run impl_1
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+synth_design -rtl -name rtl_1
+close_project
+open_project D:/Dlab/lab9/lab9.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+close_project
+open_project D:/Dlab/lab_7/lab_7.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+close_project
+open_project D:/Dlab/lab6/lab6.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+close_project
+open_project D:/Dlab/lab2/lab2.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+close_project
+open_project C:/Users/Henry/Desktop/fp0103/lab10.xpr
+update_compile_order -fileset sources_1

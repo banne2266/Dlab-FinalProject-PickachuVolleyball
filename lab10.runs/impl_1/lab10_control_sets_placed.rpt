@@ -1,0 +1,122 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Feb  5 16:17:05 2020
+| Host         : DESKTOP-D8JOE9E running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lab10_control_sets_placed.rpt
+| Design       : lab10
+| Device       : xc7a35ti
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    44 |
+|    Minimum number of control sets                        |    44 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   124 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    44 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     7 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |    11 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     3 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    16 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              75 |           49 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             296 |           92 |
+| Yes          | No                    | No                     |              42 |           14 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             495 |          202 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+-----------------------------------------------+------------------------------+------------------+----------------+
+|    Clock Signal   |                 Enable Signal                 |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
++-------------------+-----------------------------------------------+------------------------------+------------------+----------------+
+|  clk_divider0/CLK |                                               |                              |                1 |              1 |
+|  clk_divider0/CLK |                                               | lcd0/rst0                    |                2 |              2 |
+|  clk_IBUF_BUFG    | BALL_HPOS[8]_i_1_n_0                          |                              |                1 |              4 |
+|  clk_IBUF_BUFG    | lcd0/icode                                    |                              |                1 |              4 |
+|  clk_IBUF_BUFG    | lcd0/tcode[3]_i_1_n_0                         |                              |                2 |              4 |
+|  clk_IBUF_BUFG    | pika1_clock_X[29]_i_2_n_0                     | pika1_clock_X[29]_i_1_n_0    |                3 |              4 |
+|  clk_IBUF_BUFG    | BALL_VPOS[8]_i_2_n_0                          | BALL_VPOS[8]_i_1_n_0         |                3 |              4 |
+|  clk_IBUF_BUFG    | BALL_VPOS[6]_i_1_n_0                          |                              |                2 |              5 |
+|  clk_IBUF_BUFG    | a_y[4]_i_1_n_0                                |                              |                2 |              5 |
+|  clk_IBUF_BUFG    | BALL_HPOS[8]_i_1_n_0                          | BALL_HPOS[9]_i_1_n_0         |                3 |              6 |
+|  clk_IBUF_BUFG    | lcd0/lcd_initialized_reg_n_0                  | lcd0/rst0                    |                4 |              7 |
+|  clk_IBUF_BUFG    | P2BCD_counter/genblk1[0].B/E[0]               | lcd0/rst0                    |                2 |              8 |
+|  clk_IBUF_BUFG    | P2BCD_counter/genblk1[1].B/E[0]               | lcd0/rst0                    |                2 |              8 |
+|  clk_IBUF_BUFG    | pika2x_clock[27]_i_1_n_0                      | lcd0/rst0                    |                3 |              8 |
+|  clk_IBUF_BUFG    | P2BCD_counter/genblk1[0].B/p2_increase_reg[0] | lcd0/rst0                    |                2 |              8 |
+|  clk_IBUF_BUFG    | p2_increase                                   | lcd0/rst0                    |                2 |              8 |
+|  clk_IBUF_BUFG    | p1_increase                                   | lcd0/rst0                    |                5 |              8 |
+|  clk_IBUF_BUFG    | P1BCD_counter/genblk1[0].B/E[0]               | lcd0/rst0                    |                2 |              8 |
+|  clk_IBUF_BUFG    | P1BCD_counter/genblk1[0].B/p1_increase_reg[0] | lcd0/rst0                    |                2 |              8 |
+|  clk_IBUF_BUFG    | P1BCD_counter/genblk1[1].B/E[0]               | lcd0/rst0                    |                2 |              8 |
+|  clk_IBUF_BUFG    |                                               | vs0/reset_n[0]               |                4 |              9 |
+|  clk_IBUF_BUFG    |                                               | vs0/SR[0]                    |                4 |              9 |
+|  clk_divider0/CLK | vs0/h_count_next                              | vs0/v_count_reg[9]_i_1_n_0   |                3 |             10 |
+|  clk_divider0/CLK | vs0/pixel_tick                                | vs0/h_count_reg[9]_i_1_n_0   |                5 |             10 |
+|  clk_IBUF_BUFG    | vs0/pixel_tick                                | vs0/mod2_reg_reg_0[0]        |               10 |             12 |
+|  clk_IBUF_BUFG    | pika1sc                                       | lcd0/rst0                    |                5 |             12 |
+|  clk_IBUF_BUFG    | pika2sc                                       | lcd0/rst0                    |                5 |             12 |
+|  clk_IBUF_BUFG    | vs0/E[0]                                      | lcd0/rst0                    |                6 |             15 |
+|  clk_IBUF_BUFG    | pika2x_clock[19]_i_1_n_0                      |                              |                6 |             20 |
+|  clk_IBUF_BUFG    |                                               | btn_db1/clear                |                6 |             22 |
+|  clk_IBUF_BUFG    | lcd0/lcd_initialized_reg_n_0                  | lcd0/text_count[0]_i_1_n_0   |                7 |             25 |
+|  clk_IBUF_BUFG    |                                               | pika1_clock_anima[0]_i_1_n_0 |                7 |             26 |
+|  clk_IBUF_BUFG    | pika2_clock[0]_i_1_n_0                        | lcd0/rst0                    |                7 |             26 |
+|  clk_IBUF_BUFG    | pika1_clock_X[31]_i_2_n_0                     | pika1_clock_X[31]_i_1_n_0    |               13 |             28 |
+|  clk_IBUF_BUFG    |                                               | cloud2_clock0                |                8 |             31 |
+|  clk_IBUF_BUFG    |                                               | jump_clock0                  |                8 |             32 |
+|  clk_IBUF_BUFG    |                                               | cloud_clock0                 |                8 |             32 |
+|  clk_IBUF_BUFG    |                                               | ball_clock0                  |                8 |             32 |
+|  clk_IBUF_BUFG    | lcd0/init_e_i_2_n_0                           | lcd0/rst0                    |                9 |             32 |
+|  clk_IBUF_BUFG    | pika1_clock_Y[0]_i_2_n_0                      | pika1_clock_Y0               |               11 |             32 |
+|  clk_IBUF_BUFG    | vs0/p_69_in                                   | lcd0/rst0                    |               42 |             94 |
+|  clk_IBUF_BUFG    | vs0/p_71_in                                   | lcd0/rst0                    |               44 |             94 |
+|  clk_IBUF_BUFG    |                                               | lcd0/rst0                    |               37 |            101 |
+|  clk_IBUF_BUFG    |                                               |                              |              799 |           3070 |
++-------------------+-----------------------------------------------+------------------------------+------------------+----------------+
+
+
